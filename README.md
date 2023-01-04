@@ -1,0 +1,1 @@
+# Indexor Core
