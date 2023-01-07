@@ -1,6 +1,6 @@
 import requests
 
-from src.indexor_core.query import Query
+from indexor_core.query import Query
 
 
 def run_search(querystring, config):
