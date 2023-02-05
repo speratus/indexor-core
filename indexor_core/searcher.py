@@ -25,7 +25,7 @@ async def run_search_async(querystring, config):
 
     full_path = f"{url}/search{querystring}"
 
-    async with aiohttp.ClientSession as session:
+    async with aiohttp.ClientSession() as session:
         async with session.get(full_path) as response:
             return await response.json()
 
