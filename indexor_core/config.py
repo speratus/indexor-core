@@ -4,8 +4,10 @@ import configparser
 
 class Config:
 
-    def __init__(self, engine_url=""):
+    def __init__(self, engine_url="", sql_dialect="", db_url=""):
         self.engine_url = engine_url
+        self.sql_dialect = sql_dialect
+        self.db_url = db_url
 
 
 def ini_file_loader(path):
